@@ -1,0 +1,7 @@
+@mixin filter($property: none) {
+  -webkit-filter: $property;
+     -moz-filter: $property;
+      -ms-filter: $property;
+       -o-filter: $property;
+          filter: $property;
+}

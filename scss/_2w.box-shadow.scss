@@ -1,0 +1,15 @@
+@mixin box-shadow( $x, $y, $blur, $spread, $color, $inset : "" ) {
+  @if $inset != "" {
+	-webkit-box-shadow: $inset $x $y $blur $spread $color;
+	   -moz-box-shadow: $inset $x $y $blur $spread $color;
+	    -ms-box-shadow: $inset $x $y $blur $spread $color;
+	     -o-box-shadow: $inset $x $y $blur $spread $color;
+	        box-shadow: $inset $x $y $blur $spread $color;
+  } @else {
+	-webkit-box-shadow: $x $y $blur $spread $color;
+	   -moz-box-shadow: $x $y $blur $spread $color;
+	    -ms-box-shadow: $x $y $blur $spread $color;
+	     -o-box-shadow: $x $y $blur $spread $color;
+	        box-shadow: $x $y $blur $spread $color;
+  }
+}
